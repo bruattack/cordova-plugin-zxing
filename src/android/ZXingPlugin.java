@@ -53,6 +53,7 @@ public class ZXingPlugin extends CordovaPlugin {
             if (params.has("orientation_locked")) integrator.setOrientationLocked(params.getBoolean("orientation_locked")); // Orientation Locked
             if (params.has("camera_id")) integrator.setCameraId(params.getInt("camera_id")); // Camera Id
             if (params.has("beep_enabled")) integrator.setBeepEnabled(params.getBoolean("beep_enabled")); // Beep Enabled
+            if (params.has("torch_enabled")) integrator.setTorchEnabled(params.getBoolean("torch_enabled")); // Torch Enabled
             if (params.has("timeout")) integrator.setTimeout(params.getInt("timeout")); // Timeout
             
             // Scan Type

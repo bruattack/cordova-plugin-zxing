@@ -37,6 +37,7 @@ Arguments:
         'orientation_locked':true, // Lock the orientation screen
         'camera_id':0, // Choose the camera source
         'beep_enabled':true, // Enables a beep after the scan
+        'torch_enabled':true, // Enables the torch in the scanning view
         'scan_type':'normal', // Types of scan mode: normal = default black with white background / inverted = white bars on dark background / mixed = normal and inverted modes
         'barcode_formats':[
             'QR_CODE',

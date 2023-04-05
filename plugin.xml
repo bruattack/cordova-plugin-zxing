@@ -7,11 +7,11 @@
     <license>Apache 2.0</license>
 
     <keywords>cordova,android,zxing,barcode,qr,qr code,qrcode</keywords>
-    <repo>https://github.com/marceloburegio/cordova-plugin-zxing.git</repo>
-    <issue>https://github.com/marceloburegio/cordova-plugin-zxing/issues</issue>
+    <repo>https://github.com/bruattack/cordova-plugin-zxing.git</repo>
+    <issue>https://github.com/bruattack/cordova-plugin-zxing/issues</issue>
 
     <engines>
-        <engine name="cordova" version=">=4.0.0"/>
+        <engine name="cordova" version=">=6.0.0"/>
     </engines>
 
     <js-module src="www/zxingplugin.js" name="zxingPlugin">
@@ -21,11 +21,11 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="ZXingPlugin">
-                <param name="android-package" value="com.marceloburegio.zxingplugin.ZXingPlugin"/>
+                <param name="android-package" value="com.bruattack.zxingplugin.ZXingPlugin"/>
             </feature>
         </config-file>
-        <source-file src="src/android/ZXingPlugin.java" target-dir="src/com/marceloburegio/zxingplugin" />
+        <source-file src="src/android/ZXingPlugin.java" target-dir="src/com/bruattack/zxingplugin" />
     </platform>
 
-    <framework src="com.journeyapps:zxing-android-embedded:4.0.2" />
+    <framework src="com.journeyapps:zxing-android-embedded:4.3.0" />
 </plugin>

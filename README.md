@@ -5,6 +5,7 @@ This library enables an inverted scan, enabling scan on dark background with whi
 
 Works only on Android devices.
 
+** Thanks to marceloburegio from whom I forked this plugin! **
 
 ## Barcode formats supported
 
@@ -55,6 +56,21 @@ Return:
 - success('scanned bar code') _Successful scan with value of scanned code_
 - error('cancelled') _If user cancelled the scan (with back button etc)_
 - error('misc error message') _Misc failure_
+
+## Caveats
+
+In order to let the scan activity choose the orientation based on the phone's sensors, an activity config block needs to be added into the AndroidManifest.xml:
+
+```javascript
+    <manifest>
+        <application>
+            <activity android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="fullSensor" tools:replace="screenOrientation" />
+        </application>
+    </manifest>
+```
+
+I do this in the config.xml using the custom-config plugin (https://github.com/dpa99c/cordova-custom-config).
+
 
 
 ## LICENSE [Apache License 2.0](LICENSE.md)
